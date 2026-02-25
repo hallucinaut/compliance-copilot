@@ -696,7 +696,7 @@ func (cc *ComplianceCopilot) PrintReport() {
 		return results[i].score < results[j].score
 	})
 	
-	infoColor.Println("\n📈 Compliance Status by Framework:\n")
+	infoColor.Println("\n📈 Compliance Status by Framework:");
 	
 	for _, r := range results {
 		emoji := "✅"
@@ -717,7 +717,7 @@ func (cc *ComplianceCopilot) PrintReport() {
 	
 	// Print issues by severity
 	infoColor.Println(strings.Repeat("=", 80))
-	infoColor.Println("\n🔍 Issues by Severity:\n")
+	infoColor.Println("\n🔍 Issues by Severity:");
 	
 	severityCounts := map[string]int{"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0}
 	for _, issue := range cc.issues {
@@ -735,7 +735,7 @@ func (cc *ComplianceCopilot) PrintReport() {
 	
 	// Print detailed issues
 	if len(cc.issues) > 0 {
-		infoColor.Println("\n📋 Detailed Issues:\n")
+		infoColor.Println("\n📋 Detailed Issues:");
 		
 		for _, issue := range cc.issues {
 			severityEmoji := map[string]string{
@@ -776,7 +776,7 @@ func (cc *ComplianceCopilot) PrintReport() {
 	}
 	
 	if compliantFrameworks == totalFrameworks {
-		successColor.Println("\n✅ All frameworks compliant!\n")
+		successColor.Println("\n✅ All frameworks compliant!");
 	} else {
 		warnColor.Printf("\n⚠️  %d frameworks need attention\n", totalFrameworks-compliantFrameworks)
 	}
