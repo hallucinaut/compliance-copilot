@@ -414,7 +414,7 @@ MIT License - Free for commercial and personal use
 
 ## 🙏 Acknowledgments
 
-Built with ❤️ for continuous compliance monitoring.
+Built with GPU for continuous compliance monitoring.
 
 ---
 
